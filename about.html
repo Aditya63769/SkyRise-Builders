@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SkyRise Builders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover; padding: 150px 0 80px; text-align: center; color: white; }
+        .page-title { font-size: 3rem; margin-bottom: 10px; animation: fadeInUp 0.8s ease; }
+    </style>
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2942/2942149.png">
+</head>
+<body>
+    <a href="tel:9999988888" class="phone-float" aria-label="Call Us">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/919999988888" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo"> SkyRise<span>Builders</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-items">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link  dropbtn">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="service-residential.html">Residential Construction</a>
+                            <a href="service-commercial.html">Commercial Construction</a>
+                            <a href="service-renovation.html">Building Renovation</a>
+                            <a href="service-interior.html">Interior</a>
+                            <a href="service-planning.html">Building Planning</a>
+                            <a href="service-maintenance.html">Maintenance Services</a>
+                            <a href="service-work.html">Work</a>
+                        </div>
+                    </li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:9999988888" class="btn btn-outline"><i class="fas fa-phone"></i> 9999988888</a>
+                    <a href="https://wa.me/919999988888" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+                </div>
+            </nav>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">About Us</h1>
+            <p>Know more about our journey and expertise</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about-container reveal">
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SkyRise Builders Construction Team">
+                <div class="experience-badge">
+                    <span class="years">15+</span>
+                    <span class="text">Years<br>Experience</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h5 class="section-subtitle">About Us</h5>
+                <h2 class="section-title">Crafting Excellence in Every Brick</h2>
+                <div class="about-text">
+                    <p>SkyRise Builders is a trusted construction company based in Bandra West, Mumbai.</p>
+                    <p>With years of experience in residential and commercial construction, we deliver high-quality projects with modern designs and strong materials.</p>
+                    <p>Our mission is to build safe, durable, and beautiful structures that stand the test of time.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-hard-hat"></i></div>
+                        <h3 class="stat-number" data-target="15">0</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-building"></i></div>
+                        <h3 class="stat-number" data-target="1500">0</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="stat-number" data-target="350">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo-footer"> SkyRise<span>Builders</span>
+                </a>
+                <p class="footer-desc">Building Your Dreams Into Reality. We build safe, durable, and beautiful structures that stand the test of time.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="service-residential.html">Residential Construction</a></li>
+                    <li><a href="service-commercial.html">Commercial Construction</a></li>
+                    <li><a href="service-renovation.html">Building Renovation</a></li>
+                    <li><a href="service-interior.html">Interior Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> <a href="tel:9999988888">9999988888</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:skyrisebuilders@gmail.com">skyrisebuilders@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bandra West, Mumbai, Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 SkyRise Builders | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

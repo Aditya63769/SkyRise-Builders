@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | SkyRise Builders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover; padding: 150px 0 80px; text-align: center; color: white; }
+        .page-title { font-size: 3rem; margin-bottom: 10px; animation: fadeInUp 0.8s ease; }
+    </style>
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2942/2942149.png">
+</head>
+<body>
+    <a href="tel:9999988888" class="phone-float" aria-label="Call Us">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/919999988888" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo"> SkyRise<span>Builders</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-items">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link  dropbtn">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="service-residential.html">Residential Construction</a>
+                            <a href="service-commercial.html">Commercial Construction</a>
+                            <a href="service-renovation.html">Building Renovation</a>
+                            <a href="service-interior.html">Interior</a>
+                            <a href="service-planning.html">Building Planning</a>
+                            <a href="service-maintenance.html">Maintenance Services</a>
+                            <a href="service-work.html">Work</a>
+                        </div>
+                    </li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:9999988888" class="btn btn-outline"><i class="fas fa-phone"></i> 9999988888</a>
+                    <a href="https://wa.me/919999988888" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+                </div>
+            </nav>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Featured Projects</h1>
+            <p>A glimpse into our finest architectural achievements</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container reveal">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="house">Housing</button>
+                <button class="filter-btn" data-filter="building">Buildings</button>
+                <button class="filter-btn" data-filter="office">Offices</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="house">
+                    <img src="https://images.pexels.com/photos/1336067/pexels-photo-1336067.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern House">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Modern Luxury Villa</h4>
+                        <span class="project-category">House</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="building">
+                    <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Commercial Building">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Skyline Corporate Tower</h4>
+                        <span class="project-category">Building</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="office">
+                    <img src="https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Interior">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Tech Park Interiors</h4>
+                        <span class="project-category">Office</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="house">
+                    <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Residential Home">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Eco-friendly Residence</h4>
+                        <span class="project-category">House</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="building">
+                    <img src="https://images.pexels.com/photos/305833/pexels-photo-305833.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Renovation Project">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Plaza Renovation (Before/After)</h4>
+                        <span class="project-category">Building</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="office">
+                    <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Space">
+                    <div class="project-overlay">
+                        <h4 class="project-title">Creative Workspace Setup</h4>
+                        <span class="project-category">Office</span>
+                        <button class="view-btn icon-btn"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo-footer"> SkyRise<span>Builders</span>
+                </a>
+                <p class="footer-desc">Building Your Dreams Into Reality. We build safe, durable, and beautiful structures that stand the test of time.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="service-residential.html">Residential Construction</a></li>
+                    <li><a href="service-commercial.html">Commercial Construction</a></li>
+                    <li><a href="service-renovation.html">Building Renovation</a></li>
+                    <li><a href="service-interior.html">Interior Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> <a href="tel:9999988888">9999988888</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:skyrisebuilders@gmail.com">skyrisebuilders@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bandra West, Mumbai, Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 SkyRise Builders | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SkyRise Builders</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover; padding: 150px 0 80px; text-align: center; color: white; }
+        .page-title { font-size: 3rem; margin-bottom: 10px; animation: fadeInUp 0.8s ease; }
+    </style>
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2942/2942149.png">
+</head>
+<body>
+    <a href="tel:9999988888" class="phone-float" aria-label="Call Us">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/919999988888" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo"> SkyRise<span>Builders</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <ul class="menu-items">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link  dropbtn">Services <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="service-residential.html">Residential Construction</a>
+                            <a href="service-commercial.html">Commercial Construction</a>
+                            <a href="service-renovation.html">Building Renovation</a>
+                            <a href="service-interior.html">Interior</a>
+                            <a href="service-planning.html">Building Planning</a>
+                            <a href="service-maintenance.html">Maintenance Services</a>
+                            <a href="service-work.html">Work</a>
+                        </div>
+                    </li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:9999988888" class="btn btn-outline"><i class="fas fa-phone"></i> 9999988888</a>
+                    <a href="https://wa.me/919999988888" class="btn btn-primary" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+                </div>
+            </nav>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p>Let's discuss your next project</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container reveal">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-details">
+                            <h4>Location</h4>
+                            <p>Bandra West, Mumbai, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:9999988888">9999988888</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:skyrisebuilders@gmail.com">skyrisebuilders@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30166.41724391672!2d72.81577966804561!3d19.056075902120092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c92f15eb186f%3A0xe5a3c2cfdbe8d867!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1683884148459!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required placeholder=" " pattern="[0-9]{10}">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2942/2942149.png" alt="Logo" class="brand-logo-footer"> SkyRise<span>Builders</span>
+                </a>
+                <p class="footer-desc">Building Your Dreams Into Reality. We build safe, durable, and beautiful structures that stand the test of time.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="service-residential.html">Residential Construction</a></li>
+                    <li><a href="service-commercial.html">Commercial Construction</a></li>
+                    <li><a href="service-renovation.html">Building Renovation</a></li>
+                    <li><a href="service-interior.html">Interior Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone"></i> <a href="tel:9999988888">9999988888</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:skyrisebuilders@gmail.com">skyrisebuilders@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bandra West, Mumbai, Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 SkyRise Builders | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
